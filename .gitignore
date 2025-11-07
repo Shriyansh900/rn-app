@@ -1,43 +1,85 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# ==========================================
+# 📦 Dependencies
+# ==========================================
 node_modules/
 
-# Expo
+# ==========================================
+# ⚙️ Expo
+# ==========================================
 .expo/
+.expo-shared/
+.expo-dev-cache/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# ==========================================
+# 📱 Native Build Folders (after ejecting)
+# ==========================================
+ios/
+android/
 .kotlin/
-*.orig.*
-*.jks
+.gradle/
+Pods/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+*.iml
+
+# ==========================================
+# 🔐 Environment Files & Credentials
+# ==========================================
+.env
+.env.*            # .env.local, .env.production, etc.
+*.pem             # private keys
 *.p8
 *.p12
 *.key
 *.mobileprovision
+*.jks
+*.keystore
+*.orig.*
 
-# Metro
+# ==========================================
+# 🧱 Metro / Cache
+# ==========================================
 .metro-health-check*
+.expo-dev-client/
+babel.config.js.map
+*.tsbuildinfo
 
-# debug
+# ==========================================
+# 🪲 Debug / Logs
+# ==========================================
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
 
-# macOS
+# ==========================================
+# 💻 OS / IDE
+# ==========================================
 .DS_Store
-*.pem
+Thumbs.db
+*.swp
+*.swo
+*.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
 
-# local env files
-.env*.local
+# ==========================================
+# 🧪 Testing / Linting
+# ==========================================
+coverage/
+jest-cache/
+jest-test-results.json
+eslintcache
 
-# typescript
-*.tsbuildinfo
-
+# ==========================================
+# 🗂️ Misc
+# ==========================================
 app-example
-
-# generated native folders
-/ios
-/android
+*.tmp
+*.bak
+*.lock
