@@ -61,7 +61,7 @@ export default function TabsLayout() {
       />
 
       <Tabs.Screen
-        name="search"
+        name="Search"
         options={{
           title: 'Search',
           headerShown: false,
@@ -72,7 +72,7 @@ export default function TabsLayout() {
       />
 
       <Tabs.Screen
-        name="saved"
+        name="Saved"
         options={{
           title: 'Saved',
           headerShown: false,
@@ -82,7 +82,7 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
-        name="profile"
+        name="Profile"
         options={{
           title: 'profile',
           headerShown: false,
